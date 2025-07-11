@@ -46,8 +46,6 @@ define('DB_NAME', 'if0_39446680_vehicle_service_db');
 
 🛡️ Assurez-vous d’ajouter config.php à .gitignore pour éviter toute fuite de données sensibles.
 
-.
-
 ## 🚀 Déploiement
 # Hébergement :
 Le site est hébergé sur InfinityFree.
