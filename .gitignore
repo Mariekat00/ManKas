@@ -1,0 +1,33 @@
+# ❌ Fichier de configuration sensible
+config.php
+initialize.php
+.env
+
+# ❌ Dossiers de build ou compilés
+/build/
+/dist/
+/node_modules/
+
+# ❌ Dossiers de dépendances éventuelles
+/vendor/
+
+# ❌ Dossiers personnels
+/.vscode/
+/.idea/
+
+# ❌ Fichiers système
+.DS_Store
+Thumbs.db
+
+# ❌ Fichiers temporaires ou backup
+*.log
+*.bak
+*.tmp
+*.swp
+
+# ❌ Déploiement FTP
+ftp-config.json
+
+# ❌ Cache PHP
+*.cache
+*.lock
