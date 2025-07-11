@@ -5,7 +5,7 @@ if(!defined('base_app')) define('base_app', str_replace('\\','/',__DIR__).'/' );
 if(!defined('dev_data')) define('dev_data',$dev_data);
 if(!defined('DB_SERVER')) define('DB_SERVER',"sql302.infinityfree.com");
 if(!defined('DB_USERNAME')) define('DB_USERNAME',"if0_39446680");
-if(!defined('DB_PASSWORD')) define('DB_PASSWORD',"Mariekat00");
+if(!defined('DB_PASSWORD')) define('DB_PASSWORD',"");
 if(!defined('DB_NAME')) define('DB_NAME',"if0_39446680_vehicle_service_db");
 ?>
 
