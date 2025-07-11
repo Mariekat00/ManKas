@@ -89,6 +89,4 @@ ManKas Corporation
   - Le nom du répertoire si tu le renommes
   - Les coordonnées si besoin
 
-Souhaites-tu également que je te génère un fichier `LICENSE` (par exemple en MIT) ?
-
 
