@@ -36,12 +36,13 @@ Application web développée en PHP, HTML, CSS et JavaScript pour la gestion de 
 ```
 
 ## 🔧 Configuration de la base de données
-L'application utilise une base de données MySQL distante, avec les constantes suivantes dans config.php :
+```L'application utilise une base de données MySQL distante, avec les constantes suivantes dans config.php :
 
 define('DB_SERVER', 'sql302.infinityfree.com');
 define('DB_USERNAME', 'if0_39446680');
 define('DB_PASSWORD', '********'); 
 define('DB_NAME', 'if0_39446680_vehicle_service_db');
+```
 
 🛡️ Assurez-vous d’ajouter config.php à .gitignore pour éviter toute fuite de données sensibles.
 
@@ -52,11 +53,10 @@ define('DB_NAME', 'if0_39446680_vehicle_service_db');
 Le site est hébergé sur InfinityFree.
 
 # Étapes :
-1. Cloner le projet :
+```1. Cloner le projet :
 git clone https://github.com/votre-utilisateur/votre-repo.git
-
+```
 2. Mettre à jour config.php avec les identifiants de votre base.
-
 3. Uploader les fichiers sur l’hébergeur dans le dossier htdocs/.
 
 ## ✅ Fonctionnalités principales
@@ -81,8 +81,7 @@ ManKas Corporation
 ## 📜 Licence
 # Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
 
-
----
+```
 
 ### ✅ Prochaine étape :
 - Ajoute ce contenu dans un fichier `README.md` à la racine de ton dépôt.
