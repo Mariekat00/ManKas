@@ -35,7 +35,7 @@ Application web développée en PHP, HTML, CSS et JavaScript pour la gestion de 
 └── .gitignore             # Exclusions Git
 ```
 
-##🔧 Configuration de la base de données
+## 🔧 Configuration de la base de données
 L'application utilise une base de données MySQL distante, avec les constantes suivantes dans config.php :
 
 define('DB_SERVER', 'sql302.infinityfree.com');
@@ -47,11 +47,11 @@ define('DB_NAME', 'if0_39446680_vehicle_service_db');
 
 .
 
-##🚀 Déploiement
-#Hébergement :
+## 🚀 Déploiement
+# Hébergement :
 Le site est hébergé sur InfinityFree.
 
-#Étapes :
+# Étapes :
 1. Cloner le projet :
 git clone https://github.com/votre-utilisateur/votre-repo.git
 
@@ -59,7 +59,7 @@ git clone https://github.com/votre-utilisateur/votre-repo.git
 
 3. Uploader les fichiers sur l’hébergeur dans le dossier htdocs/.
 
-##✅ Fonctionnalités principales
+## ✅ Fonctionnalités principales
 * Système de gestion des services de véhicule
 * Authentification de l’administrateur
 * Téléversement de fichiers (images, justificatifs, etc.)
@@ -67,19 +67,19 @@ git clone https://github.com/votre-utilisateur/votre-repo.git
 * Connexion à une base de données distante
 
   
-##📌 Sécurité & recommandations
+## 📌 Sécurité & recommandations
 * Ne jamais exposer de mot de passe dans un dépôt public.
 * Utiliser un fichier .env et des variables d’environnement en production.
 * Utiliser HTTPS pour le déploiement final.
 
-##👤 Auteur
+## 👤 Auteur
 Moïse Manda
 ManKas Corporation
 📧 moisemanda2000@gmail.com
 📞 +243 974 037 169
 
-##📜 Licence
-#Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
+## 📜 Licence
+# Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
 
 
 ---
