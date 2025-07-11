@@ -71,10 +71,10 @@ git clone https://github.com/votre-utilisateur/votre-repo.git
 * Utiliser HTTPS pour le déploiement final.
 
 ## 👤 Auteur
-Moïse Manda
-ManKas Corporation
-📧 moisemanda2000@gmail.com
-📞 +243 974 037 169
+# Moïse Manda
+# ManKas Corporation
+# 📧 moisemanda2000@gmail.com
+# 📞 +243 974 037 169
 
 ## 📜 Licence
 # Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d’informations.
