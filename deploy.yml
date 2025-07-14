@@ -1,0 +1,20 @@
+name: Déploiement FTP
+
+on: [push]
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v2
+
+      - name: Déployer via FTP
+        uses: SamKirkland/[email protected]
+        with:
+          server: ftpupload.net             # hôte FTP InfinityFree:contentReference[oaicite:11]{index=11}
+          username: ${{ secrets.FTP_USER }} # stocké dans GitHub Secrets
+          password: ${{ secrets.FTP_PASS }} # stocké dans GitHub Secrets
+          local-dir: ./                     # dossier local à uploader
+          server-dir: /htdocs/monSite/      # dossier distant cible sur le serveur
+          git-ftp-args: --insecure          # (optionnel) désactive la vérification SSL
