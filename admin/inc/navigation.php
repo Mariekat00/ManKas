@@ -1,9 +1,8 @@
-</style>
 <!-- Main Sidebar Container -->
-      <aside class="main-sidebar sidebar-dark-primary elevation-4 sidebar-no-expand">
+      <aside class="main-sidebar admin-soft-sidebar elevation-0 sidebar-no-expand">
         <!-- Brand Logo -->
-        <a href="<?php echo base_url ?>admin" class="brand-link bg-primary text-sm">
-        <img src="<?php echo validate_image($_settings->info('logo'))?>" alt="Store Logo" class="brand-image img-circle elevation-3" style="opacity: .8;width: 2.5rem;height: 2.5rem;max-height: unset">
+        <a href="<?php echo base_url ?>admin" class="brand-link text-sm">
+        <img src="<?php echo validate_image($_settings->info('logo'))?>" alt="Store Logo" class="brand-image img-circle" style="opacity: .95;width: 2.5rem;height: 2.5rem;max-height: unset">
         <span class="brand-text font-weight-light"><?php echo $_settings->info('short_name') ?></span>
         </a>
         <!-- Sidebar -->
@@ -58,7 +57,7 @@
                     <?php if($_settings->userdata('type') == 1): ?>
                     <li class="nav-header">Administration</li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=maintenance/category" class="nav-link nav-maintenance/category">
+                      <a href="<?php echo base_url ?>admin/?page=maintenance/category" class="nav-link nav-maintenance">
                         <i class="nav-icon fas fa-th-list"></i>
                         <p>
                           Liste des Categories
@@ -66,7 +65,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=maintenance/services" class="nav-link nav-maintenance/services">
+                      <a href="<?php echo base_url ?>admin/?page=maintenance/services" class="nav-link nav-maintenance">
                         <i class="nav-icon fas fa-th-list"></i>
                         <p>
                           Liste des Services
@@ -82,7 +81,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=system_info" class="nav-link nav-system_info">
+                      <a href="<?php echo base_url ?>admin/?page=settings" class="nav-link nav-settings">
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>
                           Paramètres
@@ -92,6 +91,9 @@
                     <?php endif; ?>
                   </ul>
                 </nav>
+                <div class="admin-sidebar-profile">
+                  <img src="<?php echo validate_image($_settings->userdata('avatar')) ?>" alt="User Image">
+                </div>
                 <!-- /.sidebar-menu -->
               </div>
             </div>

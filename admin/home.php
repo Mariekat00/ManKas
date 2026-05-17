@@ -1,5 +1,7 @@
-<h1 class="text-light">Bievenue à <?php echo $_settings->info('name') ?></h1>
-<hr class="border-light">
+<div class="admin-page-heading">
+  <h1>Bievenue à <?php echo $_settings->info('name') ?></h1>
+  <p>Vue d'ensemble des services, membres et commandes.</p>
+</div>
 <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
@@ -28,7 +30,7 @@
                 <span class="info-box-text">Membres</span>
                 <span class="info-box-number">
                   <?php 
-                    $mechanics = $conn->query("SELECT sum(id) as total FROM `mechanics_list` where status = '1' ")->fetch_assoc()['total'];
+                    $mechanics = $conn->query("SELECT count(id) as total FROM `mechanics_list` where status = '1' ")->fetch_assoc()['total'];
                     echo number_format($mechanics);
                   ?>
                 </span>
@@ -50,7 +52,7 @@
                 <span class="info-box-text">Services</span>
                 <span class="info-box-number">
                 <?php 
-                    $services = $conn->query("SELECT sum(id) as total FROM `service_list` where status = 1 ")->fetch_assoc()['total'];
+                    $services = $conn->query("SELECT count(id) as total FROM `service_list` where status = 1 ")->fetch_assoc()['total'];
                     echo number_format($services);
                   ?>
                 </span>
@@ -67,8 +69,8 @@
                 <span class="info-box-text">Commande terminer</span>
                 <span class="info-box-number">
                 <?php 
-                    $services = $conn->query("SELECT sum(id) as total FROM `service_requests` where status = 3 ")->fetch_assoc()['total'];
-                    echo number_format($services);
+                    $completed = $conn->query("SELECT count(id) as total FROM `service_requests` where status = 3 ")->fetch_assoc()['total'];
+                    echo number_format($completed);
                   ?>
                 </span>
               </div>

@@ -104,7 +104,7 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
                     <?php endwhile; ?>
                     <?php if($qry->num_rows <= 0): ?>
                     <tr>
-                        <td class="text-center" colspan="6">No Data...</td>
+                        <td class="text-center" colspan="8">No Data...</td>
                     </tr>
                     <?php endif; ?>
                 </tbody>

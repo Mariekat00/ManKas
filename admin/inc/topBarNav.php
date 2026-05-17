@@ -1,18 +1,15 @@
 <style>
   .user-img{
-        position: absolute;
-        height: 27px;
-        width: 27px;
+        height: 30px;
+        width: 30px;
         object-fit: cover;
-        left: -7%;
-        top: -12%;
   }
   .btn-rounded{
         border-radius: 50px;
   }
 </style>
 <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-dark border border-light border-top-0  border-left-0 border-right-0 navbar-light text-sm">
+      <nav class="main-header navbar navbar-expand navbar-light text-sm admin-soft-topbar">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -22,6 +19,10 @@
             <a href="<?php echo base_url ?>" class="nav-link"><?php echo (!isMobileDevice()) ? $_settings->info('name'):$_settings->info('short_name'); ?> - Admin</a>
           </li>
         </ul>
+        <form class="admin-soft-search d-none d-md-flex" action="javascript:void(0)">
+          <input type="search" class="form-control" placeholder="Search">
+          <i class="fas fa-search"></i>
+        </form>
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Navbar Search -->
@@ -54,9 +55,9 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu" role="menu">
-                    <a class="dropdown-item" href="<?php echo base_url.'admin/?page=user' ?>"><span class="fa fa-user"></span> My Account</a>
+                    <a class="dropdown-item" href="<?php echo base_url ?>admin/?page=user"><span class="fa fa-user"></span> My Account</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?php echo base_url.'/classes/Login.php?f=logout' ?>"><span class="fas fa-sign-out-alt"></span> Logout</a>
+                    <a class="dropdown-item" href="<?php echo base_url ?>classes/Login.php?f=logout"><span class="fas fa-sign-out-alt"></span> Logout</a>
                   </div>
               </div>
           </li>
@@ -71,3 +72,27 @@
         </ul>
       </nav>
       <!-- /.navbar -->
+      <script>
+        $(function(){
+          var lastScroll = 0;
+          var ticking = false;
+
+          function syncTopbar(){
+            var current = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if(current > 90 && current > lastScroll + 6){
+              $('body').addClass('admin-topbar-hidden');
+            }else if(current < lastScroll - 6 || current < 40){
+              $('body').removeClass('admin-topbar-hidden');
+            }
+            lastScroll = Math.max(current, 0);
+            ticking = false;
+          }
+
+          $(window).on('scroll', function(){
+            if(!ticking){
+              window.requestAnimationFrame(syncTopbar);
+              ticking = true;
+            }
+          });
+        });
+      </script>

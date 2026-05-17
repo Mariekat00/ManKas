@@ -10,7 +10,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="./" class="h1"><b>Connexion</b></a>
+      <a href="./" class="h1 text-light"><b>Connexion</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Connectez-vous pour commence votre session</p>
@@ -55,13 +55,6 @@
   <!-- /.card -->
 </div>
 <!-- /.login-box -->
-
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
 
 <script>
   $(document).ready(function(){

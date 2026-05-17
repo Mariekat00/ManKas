@@ -22,8 +22,7 @@
 	</div>
 	<div class="card-body">
 		<div class="container-fluid">
-        <div class="container-fluid">
-			<table class="table table-bordered table-stripped">
+			<table class="table table-bordered table-striped">
 				<colgroup>
 					<col width="10%">
 					<col width="15%">
@@ -69,7 +68,6 @@
 					<?php endwhile; ?>
 				</tbody>
 			</table>
-		</div>
 		</div>
 	</div>
 </div>

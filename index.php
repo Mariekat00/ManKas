@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once('inc/header.php') ?>
-<body>
+<body class="<?php echo (isset($_GET['p']) && $_GET['p'] == 'loginAdm') ? 'public-soft-login' : '' ?>">
 <?php require_once('inc/topBarNav.php') ?>
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>
 <?php 

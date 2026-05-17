@@ -38,7 +38,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 	</div>
 	<div class="card-footer">
 		<button class="btn btn-flat btn-primary" form="mechanic-form">Enregistre</button>
-		<a class="btn btn-flat btn-default" href="?page=mechanic">Annuler</a>
+		<a class="btn btn-flat btn-default" href="?page=mechanics">Annuler</a>
 	</div>
 </div>
 <script>

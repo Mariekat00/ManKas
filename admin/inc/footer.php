@@ -96,29 +96,6 @@
     <script src="<?php echo base_url ?>plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url ?>plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- overlayScrollbars -->
-    <!-- <script src="<?php echo base_url ?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+    <script src="<?php echo base_url ?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?php echo base_url ?>dist/js/adminlte.js"></script>
-    <div class="daterangepicker ltr show-ranges opensright">
-      <div class="ranges">
-        <ul>
-          <li data-range-key="Today">Aujourd'hui</li>
-          <li data-range-key="Yesterday">Hier</li>
-          <li data-range-key="Last 7 Days">7 derniers jours</li>
-          <li data-range-key="Last 30 Days">3à derniers jours</li>
-          <li data-range-key="This Month">Ce mois</li>
-          <li data-range-key="Last Month">Derniers mois</li>
-          <li data-range-key="Custom Range">Custom Range</li>
-        </ul>
-      </div>
-      <div class="drp-calendar left">
-        <div class="calendar-table"></div>
-        <div class="calendar-time" style="display: none;"></div>
-      </div>
-      <div class="drp-calendar right">
-        <div class="calendar-table"></div>
-        <div class="calendar-time" style="display: none;"></div>
-      </div>
-      <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default" type="button">Annuler</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled" type="button">Appliquer</button> </div>
-    </div>
-    <div class="jqvmap-label" style="display: none; left: 1093.83px; top: 394.361px;">Idaho</div>
